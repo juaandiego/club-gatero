@@ -33,6 +33,18 @@ a {
     color: inherit;
 }
 
+.brand-color {
+    color: var(--logo)
+}
+
+.brand-border {
+    border-color: var(--logo);
+}
+
+.brand-bg {
+    background-color: var(--logo);
+}
+
 /*
     Header, navbar
 */
@@ -40,42 +52,14 @@ a {
     background-color: #fff;
     border-top: 3px solid var(--logo);
     padding-top: 3px;
-    /* position: sticky;
-    border-bottom: 2px solid #d1d1d1;
-    Hmm, no me convence */
 }
 
-.navbar {
-    max-width: 1200px;
+.navbar_custom {
     margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-}
-
-/* Para reordenar el flex más adelante */
-.navbar .prelogo {
-    order: 0;
-}
-
-.navbar .logo {
-    order: 1;
-}
-
-.navbar .postlogo {
-    order: 2;
-}
-
-.navbar ul {
-    flex: 3 3;
-    text-align: center;
 }
 
 .navbar__imagecont {
     margin: 0 10px;
-    flex: 1 1 100px;
-    text-align: center;
 }
 
 .navbar__menuimage {
@@ -90,21 +74,35 @@ a {
     background-color: var(--logo);
 }
 
-.navbar__menuitem__button {
-    padding: 0.75rem 1.2rem;
-    width: 200px;
-    display: inline-block;
+header .nav-item a {
+    padding: 0.50rem 1rem;
     text-align: center;
     font-weight: 400;
     font-size: 1.1rem;
     transition: background-color 0.2s;
 }
 
-a.navbar__menuitem__button:hover,
-a.navbar__menuitem__button:focus,
+header .nav-item a:hover,
+header .nav-item a:focus,
 .navbar__selected {
     background-color: var(--logo);
     color: #fff;
+}
+
+@media (max-width: 991px) {
+    .collapse.show li:first-of-type {
+        margin-top: 10px;
+    }
+}
+
+.hide-xsm {
+    display: none;
+}
+
+@media (min-width: 440px) {
+    .hide-xsm {
+        display: inherit;
+    }
 }
 
 /*
