@@ -87,7 +87,7 @@ header .nav-item a.nav-link {
     text-align: center;
     font-weight: 400;
     font-size: 1.1rem;
-    border-radius: 1.2em;
+    border-radius: 0.4em;
     transition: background-color 0.2s ease;
 }
 
@@ -96,10 +96,6 @@ header .nav-item a:focus,
 .navbar__selected {
     background-color: var(--logo);
     color: #fff;
-}
-
-.content__mosaic__img {
-    width: 100%;
 }
 
 @media (max-width: 991px) {
@@ -153,6 +149,11 @@ h2 {
 
 .content__mosaic h1 {
     margin-bottom: 2rem;
+}
+
+.content__mosaic__img {
+    width: 100%;
+    max-width: 500px;
 }
 
 .tw-container {
