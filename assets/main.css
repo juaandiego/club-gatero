@@ -13,9 +13,17 @@
     box-sizing: border-box;
 }
 
-html {
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+div,
+span,
+.title {
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
 }
 
 body {
@@ -74,12 +82,13 @@ a {
     background-color: var(--logo);
 }
 
-header .nav-item a {
-    padding: 0.50rem 1rem;
+header .nav-item a.nav-link {
+    padding: 0.50rem 1.5rem;
     text-align: center;
     font-weight: 400;
     font-size: 1.1rem;
-    transition: background-color 0.2s;
+    border-radius: 1.2em;
+    transition: background-color 0.2s ease;
 }
 
 header .nav-item a:hover,
@@ -87,6 +96,10 @@ header .nav-item a:focus,
 .navbar__selected {
     background-color: var(--logo);
     color: #fff;
+}
+
+.content__mosaic__img {
+    width: 100%;
 }
 
 @media (max-width: 991px) {
@@ -133,15 +146,17 @@ h2 {
 
 .content__mosaic {
     width: 100%;
-    background-color: var(--gray);
-    padding: 20px 10px;
+    padding: 0 0 20px;
     text-align: center;
     min-height: 200px;
-    margin-bottom: 2.5rem;
 }
 
 .content__mosaic h1 {
     margin-bottom: 2rem;
+}
+
+.tw-container {
+    max-width: 700px;
 }
 
 .content__main {
@@ -184,9 +199,9 @@ h2 {
     margin-bottom: 0;
 }
 
-span.buttonspace {
+.buttonspace {
     display: inline-block;
-    margin: 0 1rem;
+    margin: 1rem 0 0;
 }
 
 .big_infobox p.buttonspace {
