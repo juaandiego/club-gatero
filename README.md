@@ -1,5 +1,3 @@
-# club-gatero
-
 # Revamp del sitio: Club Gatero de Santiago
 
 Este proyecto consiste en una propuesta de rediseño para el sitio de la [Fundación Club Gatero](https://www.clubgatero.cl), ubicada en Ñuñoa, Santiago de Chile.
