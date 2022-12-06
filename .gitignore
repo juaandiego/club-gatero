@@ -21,6 +21,9 @@
 *.rar
 *.tar
 *.zip
+*node_modules*
+*.css.map
+/backup*
 
 # Logs and databases #
 ######################
