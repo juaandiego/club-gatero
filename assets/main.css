@@ -1,30 +1,10 @@
 @charset "UTF-8";
-/*
-    Resets, referenciables y todo lo cross-site
-    para cambios rápidos
-*/
-:root {
-  --gray: #f5f5f5;
-  --logo: #ef3d71;
-}
 
+/* Resets y cross-site */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-html,
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-div,
-span,
-.title {
-  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -42,47 +22,60 @@ a {
   color: inherit;
 }
 
-.brand-color {
-  color: var(--logo);
+h1,
+h2,
+h3,
+h4 {
+  width: 100%;
 }
 
-.brand-border {
-  border-color: var(--logo);
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+div,
+span,
+.title {
+  font-family: "Roboto", sans-serif;
 }
 
-.brand-bg {
-  background-color: var(--logo);
-}
-
-/*
-    Header, navbar
-*/
+/* Header, navbar */
 .header {
   background-color: #fff;
-  border-top: 3px solid var(--logo);
+  border-top: 3px solid #ef3d71;
   padding-top: 3px;
 }
 
 .navbar__custom {
   margin: 0 auto;
 }
+
 .navbar__imagecont {
   margin: 0 10px;
 }
+
 .navbar__menuimage {
   border-radius: 50%;
   width: 100px;
   height: 100px;
   transition: background-color 0.2s ease;
 }
+
 .navbar__menuimage:hover {
-  background-color: var(--logo);
+  background-color: #ef3d71;
 }
+
 .navbar__menuimage:focus {
-  background-color: var(--logo);
+  background-color: #ef3d71;
 }
-.navbar__selected, header .nav-item a:focus, header .nav-item a:hover {
-  background-color: var(--logo);
+
+.navbar__selected,
+header .nav-item a:focus,
+header .nav-item a:hover {
+  background-color: #ef3d71;
   color: #fff;
 }
 
@@ -93,11 +86,13 @@ header .nav-item a.nav-link {
   font-size: 1.1rem;
   transition: background-color 0.2s ease;
 }
+
 @media (max-width: 991px) {
   .collapse.show li:first-of-type {
     margin-top: 10px;
   }
 }
+
 .hide-xsm {
   display: none;
 }
@@ -107,16 +102,20 @@ header .nav-item a.nav-link {
     display: inherit;
   }
 }
-/*
-    Contenido en sí, contenedores, cajas, etc.
-*/
-h1,
-h2,
-h3,
-h4 {
-  width: 100%;
+
+.brand-color {
+  color: #ef3d71;
 }
 
+.brand-border {
+  border-color: #ef3d71;
+}
+
+.brand-bg {
+  background-color: #ef3d71;
+}
+
+/* Contenido en sí, contenedores, cajas, etc. */
 h1 {
   font-size: 1.5rem;
   text-align: center;
@@ -149,61 +148,12 @@ h2 {
   max-width: 500px;
 }
 
-.tw-container {
-  max-width: 700px;
-}
-
 .content__main {
   width: 95%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-}
-
-.medium_infobox {
-  flex: 1 1 450px;
-  min-height: 200px;
-  background-color: var(--gray);
-  margin: 1rem;
-  padding: 1.5rem;
-  display: inline-block;
-}
-
-.big_infobox {
-  flex: 1 1 850px;
-  min-height: 200px;
-  background-color: var(--gray);
-  margin: 1rem;
-  padding: 1.5rem;
-  display: block;
-}
-
-.infobox__img {
-  width: 100%;
-  max-width: 500px;
-  max-height: 300px;
-  margin-bottom: 1rem;
-}
-
-.content p,
-.content li {
-  margin-bottom: 1rem;
-}
-
-.content p:last-of-type {
-  margin-bottom: 0;
-}
-
-.buttonspace {
-  display: inline-block;
-  margin: 1rem 0 0;
-}
-
-.big_infobox p.buttonspace {
-  display: block;
-  text-align: center;
-  margin: 2rem 1rem 1rem;
 }
 
 .content__button {
@@ -216,19 +166,73 @@ h2 {
   transition: background-color 0.2s ease-in-out, border-color 0.2s, border 0.2s, color 0.2s;
 }
 
-.content__button:hover,
+.content__button:hover {
+  background-color: #f2a722;
+  color: #231f20;
+  border: 2px solid #231f20;
+}
+
 .content__button:focus {
   background-color: #f2a722;
   color: #231f20;
   border: 2px solid #231f20;
 }
 
-/*
-    Footer, finales
-*/
+.content p,
+.content li {
+  margin-bottom: 1rem;
+}
+
+.content p:last-of-type {
+  margin-bottom: 0;
+}
+
+.tw-container {
+  max-width: 700px;
+}
+
+.medium_infobox {
+  flex: 1 1 450px;
+  min-height: 200px;
+  background-color: #f5f5f5;
+  margin: 1rem;
+  padding: 1.5rem;
+  display: inline-block;
+}
+
+.buttonspace {
+  display: inline-block;
+  margin: 1rem 0 0;
+}
+
+.big_infobox {
+  flex: 1 1 850px;
+  min-height: 200px;
+  background-color: #f5f5f5;
+  margin: 1rem;
+  padding: 1.5rem;
+  display: block;
+}
+
+.big_infobox p.buttonspace {
+  display: block;
+  text-align: center;
+  margin: 2rem 1rem 1rem;
+}
+
+.infobox__img {
+  width: 100%;
+  max-width: 500px;
+  max-height: 300px;
+  margin-bottom: 1rem;
+}
+
+/*Footer, finales */
 .footer {
   width: 100%;
-  background-color: var(--gray);
+  background-color: #f5f5f5;
   min-height: 150px;
   margin: 2.5rem auto 0;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */

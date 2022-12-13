@@ -14,16 +14,16 @@
         transition: background-color 0.2s ease;
 
         &:hover {
-            background-color: var(--logo);
+            background-color: $logo;
         }
 
         &:focus {
-            background-color: var(--logo);
+            background-color: $logo;
         }
     }
 
     &__selected {
-        background-color: var(--logo);
+        background-color: $logo;
         color: #fff;
     }
 }

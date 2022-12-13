@@ -1,0 +1,13 @@
+.brand {
+    &-color {
+        color: $logo;
+    }
+
+    &-border {
+        border-color: $logo;
+    }
+
+    &-bg {
+        background-color: $logo;
+    }
+}
