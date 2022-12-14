@@ -52,6 +52,15 @@ header .nav-item {
     }
 }
 
+.maintitle {
+    transition: color 0.2s ease-in;
+
+    &:hover,
+    &:active {
+        color: $logo;
+    }
+}
+
 .hide-xsm {
     display: none;
 }
