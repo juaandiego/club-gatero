@@ -123,6 +123,13 @@ header .nav-item a.nav-link {
 }
 
 /* Contenido en sí, contenedores, cajas, etc. */
+a {
+  color: hsl(206deg, 100%, 40%);
+}
+a:hover, a:active {
+  color: hsl(206deg, 100%, 52%);
+}
+
 h2 {
   font-size: 1.5rem;
   text-align: center;
@@ -204,17 +211,33 @@ h3 {
 }
 
 .big_infobox {
-  flex: 1 1 850px;
   min-height: 200px;
-  background-color: #f5f5f5;
   margin: 1rem;
   padding: 1.5rem;
-  display: block;
+}
+.big_infobox h2 {
+  border-bottom: 3px solid #f5f5f5;
+  margin-bottom: 1.2rem;
+}
+.big_infobox ul,
+.big_infobox ol {
+  margin-bottom: 0;
 }
 .big_infobox p.buttonspace {
   display: block;
   text-align: center;
   margin: 2rem 1rem 1rem;
+}
+.big_infobox__list {
+  padding-left: 1em;
+}
+.big_infobox__list li {
+  display: block;
+  margin: 0.25em 0;
+}
+.big_infobox__img {
+  width: 95%;
+  max-width: 400px;
 }
 
 .infobox__img {

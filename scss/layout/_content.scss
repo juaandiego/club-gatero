@@ -1,3 +1,12 @@
+a {
+    color: $link;
+
+    &:hover,
+    &:active {
+        color: $linkhover;
+    }
+}
+
 h2 {
     font-size: 1.5rem;
     text-align: center;
@@ -90,17 +99,38 @@ h3 {
 }
 
 .big_infobox {
-    flex: 1 1 850px;
     min-height: 200px;
-    background-color: $gray;
     margin: 1rem;
     padding: 1.5rem;
-    display: block;
+
+    h2 {
+        border-bottom: 3px solid $gray;
+        margin-bottom: 1.2rem;
+    }
+
+    ul,
+    ol {
+        margin-bottom: 0;
+    }
 
     p.buttonspace {
         display: block;
         text-align: center;
         margin: 2rem 1rem 1rem;
+    }
+
+    &__list {
+        padding-left: 1em;
+
+        li {
+            display: block;
+            margin: 0.25em 0;
+        }
+    }
+
+    &__img {
+        width: 95%;
+        max-width: 400px;
     }
 }
 
