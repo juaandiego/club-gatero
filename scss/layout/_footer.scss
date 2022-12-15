@@ -1,6 +1,39 @@
 .footercont {
     width: 100%;
-    background-color: $gray;
-    min-height: 150px;
+    background-color: $dark;
+    min-height: 100px;
     margin: 2.5rem auto 0;
+    padding: 20px 10px;
+    text-align: center;
+
+    h3 {
+        color: $gray;
+    }
+
+    &__icon {
+        color: $gray;
+        width: 3em;
+        height: 3em;
+        margin: 0 5px;
+    }
+}
+
+.footernav {
+    nav {
+        display: block;
+    }
+
+    li {
+        display: block;
+    }
+
+    &__link {
+        color: $gray;
+        font-weight: 300;
+
+        &:hover,
+        &:active {
+            color: $logo;
+        }
+    }
 }

@@ -117,13 +117,13 @@ header .nav-item a.nav-link {
 }
 
 /* Contenido en sí, contenedores, cajas, etc. */
-h1 {
+h2 {
   font-size: 1.5rem;
   text-align: center;
   margin-bottom: 1rem;
 }
 
-h2 {
+h3 {
   font-size: 1.3rem;
   text-align: center;
   margin-bottom: 1rem;
@@ -142,7 +142,7 @@ h2 {
   margin-bottom: 2rem;
 }
 .content__mosaic__img {
-  width: 100%;
+  width: 95%;
   max-width: 500px;
 }
 .content__main {
@@ -221,7 +221,32 @@ h2 {
 /*Footer, finales */
 .footercont {
   width: 100%;
-  background-color: #f5f5f5;
-  min-height: 150px;
+  background-color: #2a2b2c;
+  min-height: 100px;
   margin: 2.5rem auto 0;
+  padding: 20px 10px;
+  text-align: center;
+}
+.footercont h3 {
+  color: #f5f5f5;
+}
+.footercont__icon {
+  color: #f5f5f5;
+  width: 3em;
+  height: 3em;
+  margin: 0 5px;
+}
+
+.footernav nav {
+  display: block;
+}
+.footernav li {
+  display: block;
+}
+.footernav__link {
+  color: #f5f5f5;
+  font-weight: 300;
+}
+.footernav__link:hover, .footernav__link:active {
+  color: #ef3d71;
 }/*# sourceMappingURL=main.css.map */
