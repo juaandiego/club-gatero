@@ -3,3 +3,9 @@
     border-top: 3px solid $logo;
     padding-top: 3px;
 }
+
+header,
+header.header {
+    overflow-x: hidden;
+    // God only knows why
+}
