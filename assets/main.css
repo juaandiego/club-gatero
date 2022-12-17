@@ -28,6 +28,11 @@ h4 {
   width: 100%;
 }
 
+header,
+header.header {
+  overflow-x: hidden;
+}
+
 html,
 body,
 h1,
@@ -275,6 +280,7 @@ h3 {
 .footernav__link {
   color: #f5f5f5;
   font-weight: 300;
+  font-size: 0.9em;
 }
 .footernav__link:hover, .footernav__link:active {
   color: #ef3d71;
