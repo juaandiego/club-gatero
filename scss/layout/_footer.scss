@@ -15,6 +15,31 @@
         width: 3em;
         height: 3em;
         margin: 0 5px;
+        transition: color 0.2s ease-in;
+
+        &--tw {
+
+            &:hover,
+            &:active {
+                color: $twitter;
+            }
+        }
+
+        &--fb {
+
+            &:hover,
+            &:active {
+                color: $facebook;
+            }
+        }
+
+        &--ig {
+
+            &:hover,
+            &:active {
+                color: $instagram;
+            }
+        }
     }
 }
 

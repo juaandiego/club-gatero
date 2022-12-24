@@ -28,11 +28,6 @@ h4 {
   width: 100%;
 }
 
-header,
-header.header {
-  overflow-x: hidden;
-}
-
 html,
 body,
 h1,
@@ -204,6 +199,7 @@ h3 {
 
 .tw-container {
   max-width: 700px;
+  min-height: 200px;
 }
 
 .medium_infobox {
@@ -274,6 +270,16 @@ h3 {
   width: 3em;
   height: 3em;
   margin: 0 5px;
+  transition: color 0.2s ease-in;
+}
+.footercont__icon--tw:hover, .footercont__icon--tw:active {
+  color: #1e9cea;
+}
+.footercont__icon--fb:hover, .footercont__icon--fb:active {
+  color: #4267b2;
+}
+.footercont__icon--ig:hover, .footercont__icon--ig:active {
+  color: #962fbf;
 }
 
 .footernav nav {
