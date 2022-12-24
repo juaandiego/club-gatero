@@ -6,7 +6,7 @@ El objetivo es proporcionar un landing informativo, de concientización y de inv
 
 ## Sobre el proyecto
 
-El proyecto sirve como entrega final para el curso de Desarrollo Web de [Coderhouse](https://www.coderhouse.com), y la cada actualización calza con la inclusión de nuevo contenido que se va presentando en las clases.
+El proyecto sirve como entrega final para el curso de Desarrollo Web de [Coderhouse](https://www.coderhouse.com), y cada actualización calza con la inclusión de nuevo contenido que se va presentando en las clases.
 ## Tecnologías
 
 El proyecto consiste en un sitio estático construido sobre **HTML** y **CSS**, dado su caracter informativo.
