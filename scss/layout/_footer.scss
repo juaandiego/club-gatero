@@ -20,7 +20,8 @@
         &--tw {
 
             &:hover,
-            &:active {
+            &:active,
+            &:focus {
                 color: $twitter;
             }
         }
@@ -28,7 +29,8 @@
         &--fb {
 
             &:hover,
-            &:active {
+            &:active,
+            &:focus {
                 color: $facebook;
             }
         }
@@ -36,7 +38,8 @@
         &--ig {
 
             &:hover,
-            &:active {
+            &:active,
+            &:focus {
                 color: $instagram;
             }
         }
@@ -58,7 +61,8 @@
         font-size: 0.9em;
 
         &:hover,
-        &:active {
+        &:active,
+        &:focus {
             color: $logo;
         }
     }

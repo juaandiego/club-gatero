@@ -41,6 +41,10 @@ span,
   font-family: "Roboto", sans-serif;
 }
 
+strong {
+  font-weight: 700;
+}
+
 .bs_icon {
   width: 1em;
 }
@@ -272,13 +276,13 @@ h3 {
   margin: 0 5px;
   transition: color 0.2s ease-in;
 }
-.footercont__icon--tw:hover, .footercont__icon--tw:active {
+.footercont__icon--tw:hover, .footercont__icon--tw:active, .footercont__icon--tw:focus {
   color: #1e9cea;
 }
-.footercont__icon--fb:hover, .footercont__icon--fb:active {
+.footercont__icon--fb:hover, .footercont__icon--fb:active, .footercont__icon--fb:focus {
   color: #4267b2;
 }
-.footercont__icon--ig:hover, .footercont__icon--ig:active {
+.footercont__icon--ig:hover, .footercont__icon--ig:active, .footercont__icon--ig:focus {
   color: #962fbf;
 }
 
@@ -293,6 +297,6 @@ h3 {
   font-weight: 300;
   font-size: 0.9em;
 }
-.footernav__link:hover, .footernav__link:active {
+.footernav__link:hover, .footernav__link:active, .footernav__link:focus {
   color: #ef3d71;
 }/*# sourceMappingURL=main.css.map */
