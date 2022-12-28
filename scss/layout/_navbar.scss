@@ -13,10 +13,7 @@
         height: 100px;
         transition: background-color 0.2s ease;
 
-        &:hover {
-            background-color: $logo;
-        }
-
+        &:hover,
         &:focus {
             background-color: $logo;
         }
@@ -37,11 +34,9 @@ header .nav-item {
         transition: background-color 0.2s ease;
     }
 
-    a:hover {
-        @extend .navbar__selected;
-    }
-
+    a:hover,
     a:focus {
+        @extend .navbar__selected;
         @extend .navbar__selected;
     }
 }

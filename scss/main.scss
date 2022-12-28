@@ -2,10 +2,10 @@
 @import 'utilities/variables', 'base/reset', 'base/typo';
 
 /* Header, navbar */
-@import 'layout/header', 'layout/navbar', 'base/base';
+@import 'layout/header', 'layout/navbar';
 
 /* Contenido en sí, contenedores, cajas, etc. */
-@import 'layout/content';
+@import 'base/base', 'layout/content';
 
 /*Footer, finales */
 @import 'layout/footer'
